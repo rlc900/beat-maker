@@ -3,10 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import {createStore} from 'redux'
+import { render } from 'react-dom'
+import { BrowserRouter } from 'react-router-dom'
 
 
-  ReactDOM.render(<App />, document.getElementById('root'));
+  render ( 
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>, document.getElementById('root'));
 
 
 serviceWorker.unregister();
