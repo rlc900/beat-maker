@@ -1,7 +1,9 @@
 import React from 'react';
 
-function NavBar(props) {
-  return <h1>AYE</h1>
+const NavBar = () => {
+
+  return <h1>Hi from NavBar</h1>
+
 }
 
 export default NavBar
