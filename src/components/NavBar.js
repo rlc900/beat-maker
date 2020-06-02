@@ -1,5 +1,5 @@
-// import React, { useState } from 'react';
 import React from 'react';
+import {Link} from 'react-router-dom'
 import { Menu } from 'semantic-ui-react'
 
 
@@ -13,17 +13,23 @@ import { Menu } from 'semantic-ui-react'
     render() {
       const { activeItem } = this.state
         return (
-          <Menu tabular>
+          <Menu tabular className = 'menu'>
             <Menu.Item
-              name='Dubstep'
-              active={activeItem === 'Dubstep'}
-              onClick={this.handleItemClick}
-            />
-            <Menu.Item
-              name='House'
-              active={activeItem === 'House'}
-              onClick={this.handleItemClick}
-            />
+            name='dubstep'
+            active={activeItem === 'dubstep'}
+            onClick={this.handleItemClick}
+            >
+              <Link to ='/dubstep'>Dubstep</Link>
+            </Menu.Item>
+            <Menu.Item>
+              <Link to ='/house'>House</Link>
+            </Menu.Item>
+            <Menu.Item>
+              <Link to ='/lofi'>Lo-fi</Link>
+            </Menu.Item>
+            <Menu.Item>
+              <Link to ='/db'>Drum and Bass</Link>
+            </Menu.Item>
           </Menu>
         )
       }
