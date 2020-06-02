@@ -15,7 +15,7 @@ class App extends React.Component {
       <div className="App">
         <header className="App-header">
           <NavBar/>
-        <h1>BEAT <Emoji symbol='🎧' label='headphones'/> MAKER</h1>
+        <h1 className='header'>BEAT <Emoji symbol='🎧' label='headphones'/> MAKER</h1>
         </header>
         <p><button onClick={this.playTestInstrument.bind(this)}>Play</button></p>
         <MIDISounds ref={(ref) => (this.midiSounds = ref)} appElementName="root" instruments={[3]} />

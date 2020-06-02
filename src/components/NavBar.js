@@ -6,8 +6,8 @@ import { Menu } from 'semantic-ui-react'
   class NavBar extends React.Component {
     state = { activeItem: 'bio' }
     handleItemClick = (e, { name }) => {
-      console.log('you clicked me')
-      // this.setState({ activeItem: name })
+      // console.log('you clicked me')
+      this.setState({ activeItem: name })
 }
 
     render() {
@@ -15,13 +15,13 @@ import { Menu } from 'semantic-ui-react'
         return (
           <Menu tabular>
             <Menu.Item
-              name='bio'
-              active={activeItem === 'bio'}
+              name='Dubstep'
+              active={activeItem === 'Dubstep'}
               onClick={this.handleItemClick}
             />
             <Menu.Item
-              name='photos'
-              active={activeItem === 'photos'}
+              name='House'
+              active={activeItem === 'House'}
               onClick={this.handleItemClick}
             />
           </Menu>

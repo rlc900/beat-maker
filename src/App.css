@@ -26,9 +26,16 @@
   color: white;
 }
 
+.header {
+  font-family: 'Bad Unicorn DEMO';
+  font-size: 3em;
+}
+
 .App-link {
   color: #61dafb;
 }
+
+
 
 @keyframes App-logo-spin {
   from {
