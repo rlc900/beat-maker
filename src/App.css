@@ -8,7 +8,6 @@ body {
     background-color: #E8CAFF;
 }
 
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -25,10 +24,16 @@ body {
   font-size: 3em;
 }
 
-.ui.tabular.menu {
+.ui.tabular.menu .active.item {
+  background: none;
+  font-weight: normal;
+}
+
+.ui.menu .item>a:not(.ui) {
   font-family: 'Bad Unicorn DEMO';
-  font-size: 2em;
-  color: #46007C !important;
+  font-size: 1.8em;
+  color: black;
+  background: none;
 }
 
 .App-link {
