@@ -14,11 +14,7 @@ import { Menu } from 'semantic-ui-react'
       const { activeItem } = this.state
         return (
           <Menu tabular className = 'menu'>
-            <Menu.Item
-            name='dubstep'
-            active={activeItem === 'dubstep'}
-            onClick={this.handleItemClick}
-            >
+            <Menu.Item>
               <Link to ='/dubstep'>Dubstep</Link>
             </Menu.Item>
             <Menu.Item>
