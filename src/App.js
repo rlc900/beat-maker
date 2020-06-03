@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
+import {withRouter} from 'react-router-dom';
 import Emoji from './components/Emoji'
 import NavBar from './components/NavBar'
-import {withRouter} from 'react-router-dom';
+import Sound from 'react-sound';
 import MIDISounds from 'midi-sounds-react';
 import './App.css';
 
