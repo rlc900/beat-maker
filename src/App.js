@@ -7,16 +7,16 @@ import './App.css';
 
 
 class App extends React.Component {
-  playTestInstrument() {
-        this.midiSounds.playChordNow(3, [60], 2.5);
+  playTestDrum() {
+        this.midiSounds.playDrumsNow([16]);
     }
   render() {
     return (
       <div className="App">
           <NavBar/>
         <h1 className='header'>BEAT <Emoji symbol='🎧' label='headphones'/> MAKER</h1>
-        <p><button onClick={this.playTestInstrument.bind(this)}>Play</button></p>
-        <MIDISounds ref={(ref) => (this.midiSounds = ref)} appElementName="root" instruments={[3]} />
+        <p><button onClick={this.playTestDrum.bind(this)}>Play</button></p>
+        <MIDISounds ref={(ref) => (this.midiSounds = ref)} appElementName="root" instruments={[16]} />
       </div>
     );
   }
