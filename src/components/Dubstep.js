@@ -1,10 +1,29 @@
 import React, { useState } from 'react';
-import Sound from 'react-sound';
+import ReactAudioPlayer from 'react-audio-player';
+import {Button} from 'semantic-ui-react'
 
-const Dubstep = (props) => {
-  return (
-    <h1>Hey from dubstep</h1>
-  )
+
+const Dubstep = () => {
+
+
+const playSound = () => {
+  return <ReactAudioPlayer
+  src="martianScanner.mp3"
+  autoPlay
+  controls
+  />
+}
+    return (
+      <div>
+      <Button
+      inverted color='black'
+      onClick={playSound}
+      >
+      Martian Sound
+       </Button>
+      </div>
+    )
+
 }
 
 export default Dubstep;
