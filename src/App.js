@@ -1,11 +1,17 @@
 import React, { useState } from 'react';
 // import {withRouter} from 'react-router-dom';
 // import {Switch, Route} from 'react-router'
+import AlienPad from './components/AlienPad'
 import Emoji from './components/Emoji'
 import './App.css';
 
+const martianScanner = new Audio('martianScanner.mp3')
 
 class App extends React.Component {
+
+  data = [
+    {id: 'martianScanner', letter: 'Q', audio: 'martianScanner.mp3'}
+  ]
 
   render() {
     return (
@@ -13,6 +19,13 @@ class App extends React.Component {
         <header>
           <h1 className='header'>Martian <Emoji symbol='👽' label='headphones'/> Pad</h1>
         </header>
+        {this.data.map(d => (
+          <AlienPad
+          id={d.id}
+          letter={d.letter}
+          src={d.audio}
+          />
+        ))}
       </div>
     );
   }
@@ -20,38 +33,3 @@ class App extends React.Component {
 
 
 export default App;
-
-// const useAudio = url => {
-//   const [audio] = useState(new Audio('martianScanner.mp3'));
-//   const [playing, setPlaying] = useState(false);
-//
-//   const toggle = () => setPlaying(!playing);
-//
-//   useEffect(() => {
-//       playing ? audio.play() : audio.pause();
-//     }
-//   );
-//
-//   useEffect(() => {
-//     audio.addEventListener('ended', () => setPlaying(false));
-//     return () => {
-//       audio.removeEventListener('ended', () => setPlaying(false));
-//     };
-//   }, []);
-//
-//   return [playing, toggle];
-// };
-//
-//
-// const Player = ({ url }) => {
-//   const [playing, toggle] = useAudio(url);
-//
-//
-//   return (
-//     <div>
-//       <Button onClick={toggle}>Martian Scanner</Button>
-//     </div>
-//   );
-// };
-//
-// export default Player;
