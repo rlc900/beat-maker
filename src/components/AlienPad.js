@@ -3,6 +3,21 @@ import React from 'react';
 
 class AlienPad extends React.Component {
 
+  componentDidMount() {
+    document.addEventListener('keydown', this.handleKeyDown)
+  }
+
+  componentWillUnmount() {
+    document.removeEventListener('keydown', this.handleKeyDown)
+  }
+
+  handleKeyDown = (e) => {
+    if (e.keyCode === this.props.letter.charCodeAt()) {
+      this.audio.play()
+      this.audio.currentTime = 0
+    }
+  }
+
   handleClick = () => {
     this.audio.play()
     this.audio.currentTime = 0

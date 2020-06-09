@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import AlienPad from './components/AlienPad'
 import Emoji from './components/Emoji'
 import './App.css';
@@ -11,6 +11,9 @@ const data = [
 
 class App extends React.Component {
 
+  state = {
+    display: ''
+  }
 
 
   render() {
@@ -25,6 +28,7 @@ class App extends React.Component {
           id={d.id}
           letter={d.letter}
           audio={d.audio}
+          handleDisplay={this.handleDisplay}
           />
         ))}
       </div>
