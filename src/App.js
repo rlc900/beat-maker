@@ -3,10 +3,15 @@ import AlienPad from './components/AlienPad'
 import Emoji from './components/Emoji'
 import './App.css';
 
-// const martianScanner = new Audio('martianScanner.mp3')
-
 const data = [
-  {id: 'martianScanner', letter: 'Q', audio: 'martianScanner.mp3'}
+  {id: 'martianScanner', letter: 'Q', audio: 'martianScanner.mp3'},
+  {id: 'alienWeapon', letter: 'W', audio: 'alienWeapon.mp3'},
+  {id: 'alienMachineGun', letter: 'E', audio: 'alienMachineGun.mp3'},
+  {id: 'powerUp', letter: 'A', audio: 'powerUp.mp3'},
+  {id: 'synthDrum', letter: 'Z', audio: 'synthDrum.wav'},
+  {id: 'claveDrum', letter: 'X', audio: 'claveDrum.wav'},
+  {id: 'kickDrum', letter: 'C', audio: 'kickDrum.wav'}
+
 ]
 
 class App extends React.Component {
