@@ -9,7 +9,7 @@ const data = [
   {id: 'alienMachineGun', letter: 'E', audio: 'alienMachineGun.mp3'},
   {id: 'powerUp', letter: 'A', audio: 'powerUp.mp3'},
   {id: 'alienClick', letter: 'S', audio: 'alienClick.mp3'},
-  {id: 'alienDrip', letter: 'D', audio: 'alienDrip.aif'},
+  {id: 'alienDrip', letter: 'D', audio: 'alienDrip.wav'},
   {id: 'synthDrum', letter: 'Z', audio: 'synthDrum.wav'},
   {id: 'claveDrum', letter: 'X', audio: 'claveDrum.wav'},
   {id: 'kickDrum', letter: 'C', audio: 'kickDrum.wav'}
