@@ -40,6 +40,23 @@ body {
   color: #61dafb;
 }
 
+.alien-pad {
+  display: grid;
+  grid-gap: 1px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+
+
+.letter {
+  padding: 10px;
+  background-color: #ccc;
+  margin-bottom: 5px;
+  /* flex: 0 0 32%;                       /* don't grow, don't shrink, width */
+    /* height: 50px; */
+    /* margin-bottom: 5px; */
+}
+
 
 
 @keyframes App-logo-spin {

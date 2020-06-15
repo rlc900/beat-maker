@@ -1,4 +1,5 @@
 import React from 'react';
+import {Grid, Button} from 'semantic-ui-react'
 
 
 class AlienPad extends React.Component {
@@ -28,17 +29,26 @@ class AlienPad extends React.Component {
     let {id, letter, audio} = this.props
     console.log(this.props)
     return(
-      <div className='alien-pad'
-      id={this.props.id}
-      onClick={this.handleClick}
-      >
-        <h1>{letter}</h1>
-        <audio
-        ref={ref => this.audio = ref}
-        src={audio}
-        id={id}
-        >
-        </audio>
+      <div>
+      <Grid relaxed columns={3} divided centered>
+        <Grid.Row columns='three'>
+          <Grid.Column>
+            <Button
+              id={this.props.id}
+              onClick={this.handleClick}
+              role='audio'
+              >
+            {letter}
+            <audio
+              ref={ref => this.audio = ref}
+              src={audio}
+              id={id}
+              >
+            </audio>
+            </Button>
+         </Grid.Column>
+        </Grid.Row>
+      </Grid>
       </div>
     )
   }
@@ -46,3 +56,16 @@ class AlienPad extends React.Component {
 
 
 export default AlienPad;
+
+// <div className='alien-pad'
+// id={this.props.id}
+// onClick={this.handleClick}
+// >
+//   <div className='letter'>{letter}</div>
+//   <audio
+//   ref={ref => this.audio = ref}
+//   src={audio}
+//   id={id}
+//   >
+//   </audio>
+// </div>
