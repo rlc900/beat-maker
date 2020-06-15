@@ -56,16 +56,3 @@ class AlienPad extends React.Component {
 
 
 export default AlienPad;
-
-// <div className='alien-pad'
-// id={this.props.id}
-// onClick={this.handleClick}
-// >
-//   <div className='letter'>{letter}</div>
-//   <audio
-//   ref={ref => this.audio = ref}
-//   src={audio}
-//   id={id}
-//   >
-//   </audio>
-// </div>
