@@ -32,7 +32,7 @@ class AlienPad extends React.Component {
       <div>
       <Grid relaxed columns={3} divided centered>
         <Grid.Row columns='three'>
-          <Grid.Column>
+          <Grid.Column color='black' computer={3}>
             <Button
               id={this.props.id}
               onClick={this.handleClick}
