@@ -1,12 +1,15 @@
 .App {
   text-align: center;
   font-family: 'Bad Unicorn DEMO';
-  background-color: #E8CAFF;
+  background: url(https://wallpaperaccess.com/full/1208944.jpg);
+  background-attachment: fixed;
+  height: 100vh;
+  /* background-color: #E8CAFF; */
 }
 
-body {
+/* body {
     background-color: #E8CAFF;
-}
+} */
 
 .App-logo {
   height: 40vmin;
@@ -22,6 +25,8 @@ body {
 .header {
   font-family: 'Bad Unicorn DEMO';
   font-size: 3em;
+  padding-bottom: 20px;
+  color: white;
 }
 
 .ui.tabular.menu .active.item {
@@ -32,7 +37,7 @@ body {
 .ui.menu .item>a:not(.ui) {
   font-family: 'Bad Unicorn DEMO';
   font-size: 1.8em;
-  color: black;
+  color: white;
   background: none;
 }
 
@@ -40,10 +45,8 @@ body {
   color: #61dafb;
 }
 
-.alien-pad {
-  display: grid;
-  grid-gap: 1px;
-  grid-template-columns: repeat(3, 1fr);
+.column {
+  height: 10vh;
 }
 
 

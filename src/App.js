@@ -1,6 +1,7 @@
 import React from 'react';
 import AlienPad from './components/AlienPad'
 import Emoji from './components/Emoji'
+import {Grid} from 'semantic-ui-react'
 import './App.css';
 
 const data = [
@@ -30,14 +31,21 @@ class App extends React.Component {
         <header>
           <h1 className='header'>Martian <Emoji symbol='👽' label='headphones'/> Pad</h1>
         </header>
-        {data.map(d => (
-          <AlienPad
-          id={d.id}
-          letter={d.letter}
-          audio={d.audio}
-          handleDisplay={this.handleDisplay}
-          />
-        ))}
+        <Grid centered>
+          <Grid.Row columns={3}>
+          {data.map(d => (
+              <Grid.Column>
+              <AlienPad
+              id={d.id}
+              letter={d.letter}
+              audio={d.audio}
+              handleDisplay={this.handleDisplay}
+              />
+              </Grid.Column>
+                ))}
+            </Grid.Row>
+          </Grid>
+
       </div>
     );
   }

@@ -1,5 +1,5 @@
 import React from 'react';
-import {Grid, Button} from 'semantic-ui-react'
+import {Button, Grid} from 'semantic-ui-react'
 
 
 class AlienPad extends React.Component {
@@ -29,10 +29,8 @@ class AlienPad extends React.Component {
     let {id, letter, audio} = this.props
     console.log(this.props)
     return(
-      <Grid relaxed columns={3} divided centered>
-        <Grid.Row columns='three'>
-      
-          <div>
+        <div>
+          <Grid.Column width={3}>
             <Button
               id={this.props.id}
               onClick={this.handleClick}
@@ -45,12 +43,9 @@ class AlienPad extends React.Component {
               id={id}
               >
             </audio>
-            </Button>
-            </div>
-
-        </Grid.Row>
-      </Grid>
-
+          </Button>
+        </Grid.Column>
+      </div>
     )
   }
 }
