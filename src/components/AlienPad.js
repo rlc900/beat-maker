@@ -29,10 +29,10 @@ class AlienPad extends React.Component {
     let {id, letter, audio} = this.props
     console.log(this.props)
     return(
-      <div>
       <Grid relaxed columns={3} divided centered>
         <Grid.Row columns='three'>
-          <Grid.Column color='black' computer={3}>
+      
+          <div>
             <Button
               id={this.props.id}
               onClick={this.handleClick}
@@ -46,10 +46,11 @@ class AlienPad extends React.Component {
               >
             </audio>
             </Button>
-         </Grid.Column>
+            </div>
+
         </Grid.Row>
       </Grid>
-      </div>
+
     )
   }
 }
