@@ -56,5 +56,3 @@ class AlienPad extends React.Component {
 
 
 export default AlienPad;
-
-// this is a test comment

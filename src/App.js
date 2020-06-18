@@ -4,7 +4,7 @@ import Emoji from './components/Emoji'
 import './App.css';
 
 const data = [
-  {id: 'martianScanner', letter: 'Q', audio: 'martianScanner.mp3'},
+  {id: 'spaceWub', letter: 'Q', audio: 'spaceWub.mp3'},
   {id: 'alienWeapon', letter: 'W', audio: 'alienWeapon.mp3'},
   {id: 'alienMachineGun', letter: 'E', audio: 'alienMachineGun.mp3'},
   {id: 'powerUp', letter: 'A', audio: 'powerUp.mp3'},
