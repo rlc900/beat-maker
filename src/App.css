@@ -1,9 +1,12 @@
 .App {
   text-align: center;
   font-family: 'Bad Unicorn DEMO';
-  background: url(https://wallpaperaccess.com/full/1208944.jpg);
-  background-attachment: fixed;
+  background-image: url(https://wallpaperaccess.com/full/1208944.jpg);
+  background-position: center;
+  background-size: 90%;
+  /* background-attachment: fixed; */
   height: 100vh;
+
   /* background-color: #E8CAFF; */
 }
 
@@ -56,8 +59,8 @@
   background-color: #ccc;
   margin-bottom: 5px;
   /* flex: 0 0 32%;                       /* don't grow, don't shrink, width */
-    /* height: 50px; */
-    /* margin-bottom: 5px; */
+  /* height: 50px; */
+  /* margin-bottom: 5px; */
 }
 
 
