@@ -1,7 +1,7 @@
 import React from 'react';
 import AlienPad from './components/AlienPad'
 import Emoji from './components/Emoji'
-import {Grid} from 'semantic-ui-react'
+import {Grid, Header} from 'semantic-ui-react'
 import './App.css';
 
 const data = [
@@ -28,9 +28,14 @@ class App extends React.Component {
     console.log(data.audio)
     return (
       <div className="App">
-        <header>
-          <h1 className='header'>Martian <Emoji symbol='👽' label='headphones'/> Pad</h1>
-        </header>
+        <Header
+        as='h1'
+        className='header'
+        textAlign='left'
+        color='white'
+        >
+          <Emoji symbol='👽' label='headphones'/> Martian Pad
+        </Header>
         <Grid centered>
           <Grid.Row columns={3}>
           {data.map(d => (

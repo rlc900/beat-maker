@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  font-family: 'Bad Unicorn DEMO';
+  font-family: 'Space Quest';
   background-image: url(https://wallpaperaccess.com/full/1208944.jpg);
   background-position: center;
   background-size: 90%;
@@ -25,8 +25,8 @@
   }
 }
 
-.header {
-  font-family: 'Bad Unicorn DEMO';
+.ui.left.aligned.header {
+  font-family: 'Space Quest';
   font-size: 3em;
   padding-bottom: 20px;
   color: white;
@@ -38,7 +38,7 @@
 }
 
 .ui.menu .item>a:not(.ui) {
-  font-family: 'Bad Unicorn DEMO';
+  font-family: 'Space Quest';
   font-size: 1.8em;
   color: white;
   background: none;
