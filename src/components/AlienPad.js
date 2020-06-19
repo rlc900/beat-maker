@@ -35,6 +35,7 @@ class AlienPad extends React.Component {
               id={this.props.id}
               onClick={this.handleClick}
               role='audio'
+              inverted color='blue'
               >
             {letter}
             <audio
